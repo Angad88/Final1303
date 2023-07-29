@@ -1,0 +1,14 @@
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\bin\Debug\netcoreapp3.1\Final24.exe
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\bin\Debug\netcoreapp3.1\Final24.deps.json
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\bin\Debug\netcoreapp3.1\Final24.runtimeconfig.json
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\bin\Debug\netcoreapp3.1\Final24.runtimeconfig.dev.json
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\bin\Debug\netcoreapp3.1\Final24.dll
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\bin\Debug\netcoreapp3.1\Final24.pdb
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.csproj.AssemblyReference.cache
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.AssemblyInfoInputs.cache
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.AssemblyInfo.cs
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.csproj.CoreCompileInputs.cache
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.dll
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.pdb
+C:\Users\000469061\Documents\GitHub\Final1303\Q24\Final24\Final24\obj\Debug\netcoreapp3.1\Final24.genruntimeconfig.cache
