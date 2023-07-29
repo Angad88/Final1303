@@ -1,0 +1,228 @@
+
+CSTP 1303 - July 29, 2023 Final Exam
+======================================
+
+Instructions:
+Exam is closed notes, books and web.
+Put the questions and answers on a Text file.
+Name the file as 1303-midterm-[YourFullName]-[StudentNumber].Txt
+
+To Submit the exam:
+===================
+1 - Push the file to your GitHub repo and submit the link to Moodle.
+2 - Attach a copy of the text file to email to george.bekari@gmail.com
+====================================================================================
+
+1 - What does DNS stand for and what is the problem it solves?
+Dns stands for Domain Name System and it can turn URLs into addresses that is understandable to a computer
+
+2 - Explain how the DNS resolver uses root DNS, TLD and SLD using an example?
+
+As an example, When a user enters "www.example.com" in their web browser, the DNS resolver first contacts the Root DNS server to find the ".com" 
+TLD's authoritative DNS server. It then contacts the ".com" TLD's authoritative DNS server to get the authoritative DNS server for "example.com." 
+Finally, it contacts the authoritative DNS server for "example.com" to obtain the IP address of "www.example.com." With the IP address, the DNS resolver 
+can successfully connect the user to the website "www.example.com."
+
+3 - What is a thread in simple terms?
+Smallest unit of execution in a program.
+
+4 - What is a process in simple terms?
+Executing any type of program from a computer.
+
+5 - Explain what a Client is in a Client/Server architecture?
+A software or computer that asks for resources, services or data from the 'Server'.
+
+6 - Explain what a Server is in a Client/Server architecture?
+The server provides resources and data for other software, computers or 'clients'.  The server can be a computer or hardware component
+
+7 - Response codes 400-499 are reserved for what kinds of responses?
+    C) Client errors 
+
+- - - - -
+8 - We are creating an API for customer management with fetch, create, update and list functionality.
+    What should the API do when a client POSTs to this endpoint [  http://www.codingsolutions/api/customer/  ]?
+    B) Create a new Customer
+    
+
+9 - What should the API do when a client POSTs to the endpoint using an id parameter [  http://www.codingsolutions/api/customer/?id=123  ]?
+    A) Generate an error
+    
+10 - For what is DNS responsible?
+    B) Converting hostnames to IP addresses
+    
+    
+11 - For what is TCP responsible?
+    C) Reliable network transportation with guarantee of packet delivery order
+    
+12 - Where would you most likely encounter UDP?
+    B) Online games
+    
+    
+13 - In which portion of the OSI model will a user most likely notice an issue?
+    D) Layer 7 - The Application Layer 
+    
+14 - When using await to call an asynchronous function, where does the execution continue after returning from function?
+    B) On the original context that spawned the asynchronous operation
+    
+15 - Why should you always use async and await together in a method that leverages the asynchronous principles?
+    C) It makes the application easier to maintain.
+
+16 - Why don't you explicltly have to return a Task from a method marked as async?
+    C) When you introduce the await keyword in an async method, it automatically gives you a Task to return. 
+       
+17 - What is the difference between an abstract and concrete class?
+    C) Abstract classes have no implementation.
+    
+18 - Assuming that we have two async implementations of GetResult1 and GetResult2 called
+    GetResult1Async() and GetResult2Async(), change the following code to take advantage of asynchronous execution. 
+
+	public async Task<int> AddResultsAsync()
+	{
+		var result1 = await GetResult1Async();
+		var result2 = await GetResult2Async();
+
+		return result1 + result2;
+	}
+
+
+19 - Which of the following collection objects would fulfill the following requirements?
+    It must internally store a key and value pair for each item.
+    It must allow us to iterate over the collection in order of the key.
+    It allows us to access the objects using the key.
+    
+    D) SortedList 
+    
+20 - Which of the following statements are true?
+    A) We can increase the size of an array collection type during program execution.
+
+21 - You are working with a large group of student objects. You need to remove all duplicates and then group them by studentid. Which collections should we use?
+    A) List
+    
+    
+22 - Suppose you have the following code snippet:
+     class Person
+     {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+     }
+
+    class PersonRepository
+    {
+        Dictionary<int, Person> people = new Dictionary<int, Person>
+        {
+            {21, new Person {ID = 1, Name="Ali", Age = 22 } },
+            {22, new Person {ID = 2, Name="Sundus", Age = 21 } },
+            {23, new Person {ID = 3, Name="Asad", Age = 22 } },
+            {24, new Person {ID = 5, Name="Naveed", Age = 21 } },
+        };
+
+        private void AddAdminMember()
+        {
+X1:        
+X2:         people.Add(24, new Person { ID = 6, Name = "Malik", Age = 10 });
+
+        }
+    }
+
+    The application fails at line X2 with the following error message: "An item with the same key has already been added." You need to resolve the error.
+    Which code segment should you insert at line X1?
+    
+    B) if(!people.ContainsKey(24))
+
+23 - Write a Concurrent Generic Queue with the following public methods:
+The queue should use an array as the internal data structure.
+Vote that the queue may be called from multiple threads
+Enqueue - puts an item on the queue
+Dequeue - removes and returns the next in line item
+GetCurrentLength - returns the current length
+Peek - returns the next in line item
+Queue should have a contructor that takes in the max. length.
+
+Do not use the built-in .net queue.
+Try to implement the queue with optimum efficiency.
+
+
+
+=========================================
+This part of the exam gives you an option:
+You get to choose between Q24 & Q25.
+==========================================
+
+24 - You are develping an RPG game that incorporatres warriors, weapons and damages each weapon can cause. 
+    Your job is to create the classes for weapon damages. 
+    The weapons that can cause damage and the amount of damages are:
+      Weapon     Base Damage 
+      ======     ===========
+    - Sword       3
+    - Arrow       2
+    - Crossbow    2.5 
+    - Whip        1.5
+    - Dagger      2
+    - Staff       1
+    
+    All weapons calculate damage first by rolling dice. This is a virtual dice roll done randomly by the code.
+    A Dice roll of one  has no effect on the damage.
+    There should be a CalculateDamage() method that returns the damage calculated as double.
+    Sword, Staff and Dagger are special weapons in that they can become magical weapons if the player has reached levels 2 and above.
+    Every player starts at level 1. From levels 2 and up, the magic adds extra percentage to the weapon's damage.
+    
+    Player Level Damage increase % 
+    ============ ================
+    1               none
+    2               40%
+    3               60%
+    4               80%
+    5               100%
+
+    Dice Roll  Damage increase %
+    ========= ====================
+    1               none 
+    2               20%
+    3               30%
+    4               40%
+    5               50%
+    6               60%
+
+    E.g. the damage score for a sword is 3 and the user rolls 5 that increases the damage by 50% to 4.5
+    And if the player is at level 3, the damage is increased by 60% to 7.2
+        
+    Create the classes and methods necessary to calculate represent weapon damage and implement the CalculateDamage method for all weapons.
+
+25 - We have a Player Score object for our game in previous question that has the following properties.
+    - Username (string)
+    - GameId (string)
+    - Score (DateTime)
+    - Score (double)
+    
+    We need to periodically save the GameScore to a flat text file.
+    We also need to read the score from the latest file into memory when the user logs into the game.
+    Write the classes and methods to accomplish these functionalities.
+
+    // Assume you have the following utility interface, class and enum to access the file system.
+    public interface IFileManager
+    {
+        List<File> GetFolderContect(string path);
+        Open(string filename);
+        string ReadAll();
+        string Read(int length);
+        int Write(string);
+        Close();
+    }
+
+    public class File
+    {
+        public FileSystemObjectType FileSystemObjectType { get; }
+        public string Filename { get; }
+        public string Path { get; }
+    }
+    
+    public enum FileSystemObjectType
+    {
+        File,
+        Folder
+    }
+
+    ===========================================
+    Terms & abbreviations:
+    OSI: The Open Systems Interconnection model
